@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Rute transport in comun</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <!-- Text Spinner -->
+    <string-array name="age_options">
+        <item>Da, am peste 18 ani</item>
+        <item>Nu, nu am 18 ani</item>
+    </string-array>
+
+    <!-- Text Bottom Menu Items -->
+    <string name="menu_start">Start</string>
+    <string name="menu_routes">Routes (Lines)</string>
+    <string name="menu_planner">Planner</string>
+    <string name="menu_notifications">Notifications</string>
+    <string name="menu_profile">Profile</string>
+
+    <!-- Text MainActivity -->
+    <string name="main_activity_title">Start</string>
+    <string name="main_activity_paragraph">Bun venit în aplicația destinată rutelor de transport în comun din București. Deocamdată aplicația este în dezvoltare, dar vom evolua :) \n Pentru început descoperă rutele de transport ale rețelei de metrou Metrorex, București.</string>
+
+    <!-- Text RoutesActivity -->
+    <string name="routes_activity_title">Rețeaua de Metrou</string>
+
+    <!-- Text NavigationActivity -->
+    <string name="navigation_activity_title">Navigare Google Maps</string>
+    <string name="navigation_activity_subtitle">De vazut / discutat...</string>
+
+    <!-- Text NotificationsActivity -->
+    <string name="notifications_activity_title">Notificări (InfoTB app)</string>
+    <!--
+    <string name="notifications_activity_comment">Sectiune in lucru</string> //am renuntat temporar la text
+    -->
+
+    <!-- Text ProfileActivity -->
+    <string name="profile_activity_title">Profilul tău</string>
+    <string name="profile_activity_hint_name">Nume și prenume</string>
+    <string name="profile_activity_hint_email">Adresa e-mail</string>
+    <string name="profile_activity_button_clear">Curăță</string>
+    <string name="profile_activity_button_save">Salvează</string>
+    <string name="profile_activity_button_logoff_review">Log-off și Review</string>
+
+    <string name="profile_activity_alert_name_field">Numele trebuie sa aiba cel putin 4 caractere.</string>
+    <string name="profile_activity_alert_email_field">Introduceti o adresa de email valida.</string>
+    <string name="profile_activity_underage_restriction_title">Restricție de vârstă</string>
+    <string name="profile_activity_underage_restriction_message">Trebuie să ai cel puțin 18 ani pentru a utiliza această aplicație.</string>
+    <string name="ok">OK</string>
+    <string name="data_saved">Datele au fost salvate.</string>
+    <string name="data_save_error">Eroare la salvarea datelor.</string>
+    <string name="user_data_file_name">userData.txt</string>
+    <string name="user_data_format">Nume: %1$s\nEmail: %2$s\nVârstă: %3$s</string>
+    <string name="data_cleared">Datele au fost curățate.</string>
+
+    <!-- Start Text ReviewActivity -->
+    <string name="review_activity_title">Opinia ta contează!</string>
+    <string name="review_activity_thankyou">îți multumim!</string>
+
+    <!-- ++Strings for ReviewActivity.java -->
+    <string name="thank_you_for_using_app">Îți mulțumim pentru utilizarea aplicației!</string>
+    <string name="rate_app_message">Ne-ar fi de mare folos să știm cât de mult ți-a plăcut aplicația, dându-ne un rating mai jos.</string>
+    <string name="thank_you_for_rating">Mulțumim pentru rating!\nLa revedere!</string>
+    <!-- Personalized message part 1 -->
+    <string name="dear_user">Dragă&#160;</string>
+    <!-- Personalized message part 2 -->
+    <string name="thank_you_for_using_app_personalized">, îți mulțumim pentru utilizarea aplicației! Ne-ar fi de mare folos să știm cât de mult ți-a plăcut aplicația, dându-ne un rating mai jos.</string>
+    <string name="rating_bar_null">RatingBar is null!</string>
+    <!-- End Text ReviewActivity -->
+
+</resources>

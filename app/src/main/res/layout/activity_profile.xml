@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <!-- Camp pentru titlu -->
+    <TextView
+        android:id="@+id/textViewProfileTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_activity_title"
+        android:textSize="30sp"
+        android:textColor="@color/blue"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Camp pentru nume -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/profile_activity_hint_name"
+        android:inputType="textPersonName"
+        android:layout_below="@id/textViewProfileTitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Camp pentru email -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/profile_activity_hint_email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <!-- Camp pentru dropdown -->
+    <Spinner
+        android:id="@+id/spinnerAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:entries="@array/age_options" />
+
+    <!-- Date Picker pentru data nașterii // prea mare...
+    <DatePicker
+        android:id="@+id/datePickerBirthDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginTop="8dp"/>
+        -->
+
+    <!-- Randurile cu butoane -->
+    <LinearLayout
+        android:id="@+id/firstRowButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerAge"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/blue2"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/profile_activity_button_clear" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/profile_activity_button_save"
+            android:textColor="@color/blue2"
+            android:fontFamily="sans-serif-black"
+            android:background="@color/green" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondRowButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstRowButtons"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+        <!-- ascundem butonul de exit din ecranul asta / mutam in Review
+                <Button
+                    android:id="@+id/buttonExit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="16dp"
+                    android:text="Exit" />
+        -->
+                <Button
+                    android:id="@+id/buttonLogOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/profile_activity_button_logoff_review" />
+            </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_user_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secondRowButtons"
+        android:layout_marginTop="16dp"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="wrap_content"
+                android:layout_height="63dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/bottom_background"
+                android:elevation="2dp"
+                app:menu="@menu/bottom_menu"
+                app:itemIconSize="30dp"
+                app:itemIconTint="@drawable/item_selector"
+                app:itemRippleColor="@android:color/transparent"
+                app:labelVisibilityMode="unlabeled"/>
+
+        </RelativeLayout>
